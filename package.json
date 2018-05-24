@@ -1,0 +1,23 @@
+{
+  "name": "rachelbeneroff_v2",
+  "version": "1.0.0",
+  "description": "V2 of personal website",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RBeneroff/rachelbeneroff_v2.git"
+  },
+  "author": "Rachel Beneroff",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RBeneroff/rachelbeneroff_v2/issues"
+  },
+  "homepage": "https://github.com/RBeneroff/rachelbeneroff_v2#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "path": "^0.12.7"
+  }
+}
