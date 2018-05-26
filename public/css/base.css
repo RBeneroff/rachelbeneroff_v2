@@ -1,60 +1,52 @@
 /* BASE */
-
-<style>
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,400,700');
-</style>
-
 body {
   font-family: 'Montserrat', sans-serif;
   color: #3C3D3E;
 }
-
 h1 {
   font-size: 38px;
-  font-family: 'Montserrat', sans-serif;
   font-weight: 100;
   color: #3C3D3E;
 }
-
 h4 {
-  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   color: #3C3D3E;
 }
-
 p {
-  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   color: #3C3D3E;
+}
+a {
+  color: #3C3D3E;
+}
+a:hover, .button:hover {
+  cursor: pointer;
 }
 
 /* OVERRIDES */
-
 .navbar-light .navbar-toggler {
   border: none;
 }
-
 button:focus {
   outline: none !important;
 }
-
 .bg-light {
   background-color: #ffffff !important;
+  padding-right: 40px;
+  padding-left: 40px;
 }
 
 /* NAVBAR */
-
-nav a, nav li a {
+nav a, nav li a, .work a {
   position: relative;
   color: #3C3D3E;
   text-decoration: none;
 }
-
-nav > a:hover, nav li > a:hover {
+nav > a:hover, nav li > a:hover, .work a:hover {
   color: #3C3D3E;
 }
-
-nav > a:before, nav li > a:before {
+nav > a:before, nav li > a:before, .work a:before {
   content: "";
   position: absolute;
   width: 100%;
@@ -68,30 +60,124 @@ nav > a:before, nav li > a:before {
   -webkit-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
 }
-
-nav > a:hover:before, nav li > a:hover:before {
+nav > a:hover:before, nav li > a:hover:before, .work a:hover:before {
   visibility: visible;
   -webkit-transform: scaleX(1);
   transition: scaleX(1);
 }
 
 /* HOMEPAGE */
-
 .background {
   background-color: #ffffff;
   background-image: url('../assets/background.png');
-  display: absolute;
   height: 100vh;
-  width: 100%;
+  width:100vw;
   margin-left: 60px;
-  margin-top: 4px;
+  margin-top: 60px;
+  /* margin-top: 4px; */
   background-size: auto 100%;
   background-repeat: no-repeat;
   background-position: left top;
   padding: 60px;
 }
-
 .line {
   border-top: 1px solid #3C3D3E;
   margin-bottom: 15px;
+}
+.temporary {
+  margin-top: 20px;
+}
+.button {
+  padding: 20px 60px;
+  text-align: center;
+  background-color: transparent;
+  border: 2px solid #000000;
+}
+
+/* WORK */
+.next {
+  margin: 0 60px;
+  vertical-align: middle;
+  margin-top:30px; /* need to make the margins completely even here */
+}
+#begin, #two, #three, #four, #five {
+  height: 70vh;
+  width: 100%;
+}
+.work .fade, .work #one {
+  margin: 30px 0;
+  height: 600px;
+  padding: 30px 0;
+  /* background-color: #000; */
+}
+.fade {
+  opacity:0;
+  position: relative;
+}
+.bullies {
+  background-image: url('../assets/23k-bullies.png');
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 450px;
+  width: 100%;
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%,-50%);
+  padding: 60px;
+}
+.spaced, .simply, .design {
+  background-color: #6e86a8;
+  height: 450px;
+  width: 100%;
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%,-50%);
+  padding: 60px;
+}
+.bullies:before, .blends:before {
+  content: "";
+  position: absolute;
+  left: 0; right: 0;
+  top: 0; bottom: 0;
+  background: rgba(255,255,255,.6);
+}
+.blends {
+  height: 450px;
+  width: 100%;
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%,-50%);
+  padding: 60px;
+  /* background-color: #6e86a8; */
+}
+.box1 {
+  width:80%;
+  height:100px;
+  background-color: #d6eeff;
+}
+.box2 {
+  width:50%;
+  height:100px;
+  background-color: #3a3f40;
+}
+.box3 {
+  width:30%;
+  height:100px;
+  background-color: #d3e5e5;
+}
+.title {
+  position: relative;
+  bottom: 90px;
+}
+h2 {
+  font-size: 90px;
+}
+.text {
+  position: relative;
+  top: 290px;
+  text-align: right;
+}
+.blends .text {
+  top: -10px;
 }

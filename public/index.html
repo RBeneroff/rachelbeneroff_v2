@@ -22,9 +22,9 @@
     <link rel="stylesheet" href="css/mobile.css">
   </head>
   <body ng-app='rbeneroff'>
-    <header class="header" ng-hide="$state.current.name === 'home'">
+    <header class="header" style="display:none;">
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand active" ui-sref='home' style="display:none;">Rachel Beneroff</a>
+        <a class="navbar-brand active" ui-sref='home' ng-hide="$state.current.name === 'home'">Rachel</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
           <span class="fa fa-bars fa-1x"></span>
         </button>

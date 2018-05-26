@@ -1,7 +1,10 @@
 (function() {
   angular
     .module('rbeneroff', ['ui.router'])
-    .config(MainRouter);
+    .config(MainRouter)
+    .run(function ($state,$rootScope) {
+    $rootScope.$state = $state;
+  });
 
   MainRouter.$inject = ['$stateProvider', '$urlRouterProvider', '$locationProvider'];
 
