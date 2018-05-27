@@ -16,6 +16,7 @@ h4 {
 p {
   font-weight: 400;
   color: #3C3D3E;
+  font-size: 18px;
 }
 a {
   color: #3C3D3E;
@@ -66,19 +67,26 @@ nav > a:hover:before, nav li > a:hover:before, .work a:hover:before {
   transition: scaleX(1);
 }
 
+/* .nav-trans {
+  background: transparent !important;
+  position: absolute;
+  top:0;
+} */
+
 /* HOMEPAGE */
 .background {
   background-color: #ffffff;
-  background-image: url('../assets/background.png');
+  /* background-image: url('../assets/background.png'); */
+  background-image: linear-gradient(rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.4)), url("../assets/background.png");
   height: 100vh;
   width:100vw;
-  margin-left: 60px;
-  margin-top: 60px;
-  /* margin-top: 4px; */
+  /* margin-right: 60px; */
+  margin-top:4px;
+  /* margin-top: 60px; */
   background-size: auto 100%;
   background-repeat: no-repeat;
-  background-position: left top;
-  padding: 60px;
+  background-position: right top;
+  padding: 60px 0 60px 60px;
 }
 .line {
   border-top: 1px solid #3C3D3E;
@@ -100,13 +108,16 @@ nav > a:hover:before, nav li > a:hover:before, .work a:hover:before {
   vertical-align: middle;
   margin-top:30px; /* need to make the margins completely even here */
 }
-#begin, #two, #three, #four, #five {
+#two, #three, #four, #five {
+  /* #begin,  */
   height: 70vh;
   width: 100%;
 }
-.work .fade, .work #one {
+.work .fade, .work #one
+{
   margin: 30px 0;
-  height: 600px;
+  /* height: 600px; */
+  height:50vh;
   padding: 30px 0;
   /* background-color: #000; */
 }
@@ -126,7 +137,7 @@ nav > a:hover:before, nav li > a:hover:before, .work a:hover:before {
   transform: translate(-50%,-50%);
   padding: 60px;
 }
-.spaced, .simply, .design {
+/* .spaced, .simply {
   background-color: #6e86a8;
   height: 450px;
   width: 100%;
@@ -134,8 +145,8 @@ nav > a:hover:before, nav li > a:hover:before, .work a:hover:before {
   top: 50%; left: 50%;
   transform: translate(-50%,-50%);
   padding: 60px;
-}
-.bullies:before, .blends:before {
+} */
+.bullies:before {
   content: "";
   position: absolute;
   left: 0; right: 0;
@@ -143,28 +154,55 @@ nav > a:hover:before, nav li > a:hover:before, .work a:hover:before {
   background: rgba(255,255,255,.6);
 }
 .blends {
+  /* height: 450px; */
+  width: 100%;
+  height:100vh;
+  position: absolute;
+  /* top: 50%; left: 50%;
+  transform: translate(-50%,-50%); */
+  /* padding: 60px; */
+  padding: 100px 60px;
+  /* background-color: #6e86a8; */
+}
+.blends:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 100px;
+  top: -100px;
+  bottom: 0;
+  /* background: rgba(255,23,255,.6); */
+  background: rgba(255,192,212,.6);
+}
+.box1 {
+  width:80%;
+  height:100px;
+  background-color: #ffffff;
+  /* background-color: #d6eeff; */
+}
+.box2 {
+  width:50%;
+  height:100px;
+  /* background-color: #ffffff; */
+  background-color: #3a3f40;
+}
+.box3 {
+  width:30%;
+  height:100px;
+  /* background-color: #d3e5e5; */
+  background-color: #CCCCCC;
+}
+.design {
+  background-image: url('../assets/design.png');
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
   height: 450px;
   width: 100%;
   position: absolute;
   top: 50%; left: 50%;
   transform: translate(-50%,-50%);
   padding: 60px;
-  /* background-color: #6e86a8; */
-}
-.box1 {
-  width:80%;
-  height:100px;
-  background-color: #d6eeff;
-}
-.box2 {
-  width:50%;
-  height:100px;
-  background-color: #3a3f40;
-}
-.box3 {
-  width:30%;
-  height:100px;
-  background-color: #d3e5e5;
 }
 .title {
   position: relative;
@@ -180,4 +218,44 @@ h2 {
 }
 .blends .text {
   top: -10px;
+}
+.design .title, .title h2, .title p {
+  display: inline-block;
+}
+
+/* CONTACT */
+.intouch {
+  background-color: #ffffff;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.0)), url("../assets/contact.png");
+  height:100vh;
+  width:100vw;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: left top;
+  padding: 60px;
+  margin-right: 60px;
+  /* margin-top: 60px; */
+  margin-top: 350px;
+}
+.intouch h4 {
+  margin-top: 60px;
+}
+.intouch h1 {
+  font-weight: 400;
+}
+
+.intouch a i {
+  font-size: 38px;
+  padding: 0 10px;
+}
+
+.about {
+  background: rgba(255,255,255,.8);
+  padding: 60px;
+  max-width: 85%;
+  text-align: right;
+  margin-top:30vh;
+  width:80vw;
+  float:right;
+  /* height:95%; */
 }

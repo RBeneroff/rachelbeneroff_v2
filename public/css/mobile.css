@@ -1,6 +1,29 @@
 @media only screen and (max-width: 600px) {
+
  .background {
    height: 100vh;
    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("../assets/background.png");
    margin: 0 auto;
+   background-position: left top;
  }
+ nav > a.contact:before, nav li > a.contact:before, nav li > a.resume:before {
+    width: 20%;
+   }
+   nav > a.work:before, nav li > a.work:before {
+      width: 10%;
+   }
+   .about {
+      max-width: 100%;
+      padding: 60px 30px;
+   }
+   .intouch {
+      padding: 60px 30px;
+   }
+}
+
+@media only screen and (max-width: 850px) {
+   .background {
+
+   }
+
+}

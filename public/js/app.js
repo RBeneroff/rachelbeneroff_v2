@@ -2,9 +2,15 @@
   angular
     .module('rbeneroff', ['ui.router'])
     .config(MainRouter)
-    .run(function ($state,$rootScope) {
-    $rootScope.$state = $state;
-  });
+  //   .run(function ($state,$rootScope) {
+  //   $rootScope.$state = $state;
+  // });
+  .run(
+  ['$rootScope', '$state', '$stateParams',
+      function ($rootScope, $state, $stateParams){
+          $rootScope.$state = $state;
+          $rootScope.$stateParams = $stateParams;
+  }]);
 
   MainRouter.$inject = ['$stateProvider', '$urlRouterProvider', '$locationProvider'];
 
@@ -15,12 +21,12 @@
       url: '/',
       templateUrl: 'home.html',
     })
-    .state('work', {
-      url: '/work',
+    .state('home.work', {
+      url: 'work',
       templateUrl: 'work.html',
     })
-    .state('contact', {
-      url:'/contact',
+    .state('home.about', {
+      url:'about',
       templateUrl: 'contact.html',
     });
 
