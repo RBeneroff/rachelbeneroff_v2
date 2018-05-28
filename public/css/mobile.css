@@ -12,6 +12,11 @@
    nav > a.work:before, nav li > a.work:before {
       width: 10%;
    }
+   .me {
+      max-width: none;
+      min-width: inherit;
+      background: none;
+   }
    .about {
       max-width: 100%;
       padding: 60px 30px;

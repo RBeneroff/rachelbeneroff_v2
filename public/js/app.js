@@ -2,9 +2,6 @@
   angular
     .module('rbeneroff', ['ui.router'])
     .config(MainRouter)
-  //   .run(function ($state,$rootScope) {
-  //   $rootScope.$state = $state;
-  // });
   .run(
   ['$rootScope', '$state', '$stateParams',
       function ($rootScope, $state, $stateParams){
@@ -20,15 +17,19 @@
     .state('home', {
       url: '/',
       templateUrl: 'home.html',
-    })
-    .state('home.work', {
-      url: 'work',
-      templateUrl: 'work.html',
-    })
-    .state('home.about', {
-      url:'about',
-      templateUrl: 'contact.html',
     });
+    // .state('home.work', {
+    //   url: 'work',
+    //   templateUrl: 'work.html',
+    // })
+    // .state('home.about', {
+    //   url:'about',
+    //   templateUrl: 'contact.html',
+    // })
+    // .state('home.contact', {
+    //   url:'contact',
+    //   templateUrl: 'contact.html',
+    // });
 
     $urlRouterProvider.otherwise('/');
 

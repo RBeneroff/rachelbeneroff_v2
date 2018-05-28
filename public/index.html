@@ -16,13 +16,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.min.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
     <script type="text/javascript" src="js/siteController.js"></script>
+    <script type="text/javascript" src="js/protractor.js"></script>
+    <script type="text/javascript" src="js/workController.js"></script>
+    <script type="text/javascript" src="js/contactController.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/mobile.css">
   </head>
   <body ng-app='rbeneroff'>
-    <header class="header">
+    <header class="header" style="display:none;">
       <nav class="navbar navbar-expand-sm navbar-light bg-light nav-trans">
         <a class="navbar-brand active" ui-sref='home' ng-hide="$state.current.name === 'home'">Rachel</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,7 +37,7 @@
               <a class="nav-link work" href="#work">Work</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link resume" target="_blank" href="../assets/Rachel_Beneroff_Resume.pdf">Resumé</a>
+              <a class="nav-link resume" target="_blank" href="../assets/RachelBeneroff_Resume.pdf">Resumé</a>
             </li>
             <li class="nav-item">
               <a class="nav-link contact" href="#contact">Contact</a>
