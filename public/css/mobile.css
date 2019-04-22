@@ -1,26 +1,23 @@
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 650px) {
 
  .background {
-   height: 100vh;
-   background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("../assets/background.png");
-   margin: 0 auto;
-   background-position: left top;
- }
- nav > a.contact:before, nav li > a.contact:before, nav li > a.resume:before {
-    width: 20%;
+   /* height: 100vh; */
+   /* background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("../assets/rb_.png"); */
+   margin: 30px 0 0 30px;
+   background-size: auto 100%;
+   background-repeat: no-repeat;
+   background-position: left bottom;
    }
-   nav > a.work:before, nav li > a.work:before {
-      width: 10%;
+   .color-block {
+      width: 80vw;
    }
-   .me {
-      max-width: none;
-      min-width: inherit;
-      background: none;
+   .me, .me a.email, .temporary i, .me a.email:hover, .me a.email:before {
+      color: #dddddd;
    }
-   .about {
-      max-width: 100%;
-      padding: 60px 30px;
+   .me a.email:before {
+      background-color: #dddddd;
    }
+
    .intouch {
       padding: 60px 30px;
    }
