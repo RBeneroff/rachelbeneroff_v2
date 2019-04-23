@@ -1,31 +1,56 @@
 @media only screen and (max-width: 650px) {
-
+   /* 650px */
+   /* 530px */
  .background {
-   /* height: 100vh; */
-   /* background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("../assets/rb_.png"); */
    margin: 30px 0 0 30px;
    background-size: auto 100%;
    background-repeat: no-repeat;
    background-position: left bottom;
+   padding-left:30px;
    }
    .color-block {
       width: 80vw;
    }
-   .me, .me a.email, .temporary i, .me a.email:hover, .me a.email:before {
+   /* .me, .me a.email, .temporary i, .me a.email:hover, .me a.email:before {
       color: #dddddd;
    }
    .me a.email:before {
       background-color: #dddddd;
-   }
-
+   } */
    .intouch {
       padding: 60px 30px;
    }
+   .mobile-email {
+    display: inline-block;
+    visibility: visible;
+   }
+   .in-touch {
+      display: none;
+      visibility: hidden;
+   }
+   .temporary {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      background: rgba(255,255,255,.4);
+      margin-left: -30px;
+      display: flex;
+      justify-content: space-around;
+   }
+   .temporary i {
+      padding: 0 10px;
+   }
+   .me {
+      max-width: none;
+   }
 }
 
-@media only screen and (max-width: 850px) {
-   .background {
-
+@media only screen and (min-width: 651px) and (max-width: 1054px) {
+   .temporary {
+    background: rgba(255,255,255,.4);
+    padding-left: 50px;
+    margin-left:-50px;
+    max-width:465px;
    }
 
 }

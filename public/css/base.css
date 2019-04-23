@@ -13,11 +13,11 @@ h4 {
   font-weight: 400;
   color: #3C3D3E;
 }
-p {
+/* p {
   font-weight: 400;
   color: #3C3D3E;
   font-size: 18px;
-}
+} */
 a {
   color: #3C3D3E;
 }
@@ -58,6 +58,10 @@ nav > a:hover:before, nav li > a:hover:before, .work a:hover:before, .me a:hover
   -webkit-transform: scaleX(1);
   transition: scaleX(1);
 }
+.mobile-email {
+ display: none;
+ visibility: hidden;
+}
 
 /* HOMEPAGE */
 .temporary i {
@@ -97,7 +101,6 @@ nav > a:hover:before, nav li > a:hover:before, .work a:hover:before, .me a:hover
   max-width: 500px;
   position: relative;
   padding: 30px 30px 30px 0;
-  min-width: 300px;
 }
 .color-block {
   background: #82c8c5;
@@ -109,13 +112,6 @@ nav > a:hover:before, nav li > a:hover:before, .work a:hover:before, .me a:hover
   top: 12px;
   left: 12px;
 }
-/* .color-block {
-  background: #82c8c5;
-  height: 700px;
-  width: 950px;
-  opacity:.3;
-  z-index: -1;
-  position: relative;
-  bottom: 330px;
-  right:50px;
-} */
+.in-touch {
+  margin-top: 16px;
+}
