@@ -1,22 +1,14 @@
 @media only screen and (max-width: 650px) {
-   /* 650px */
-   /* 530px */
  .background {
-   margin: 30px 0 0 30px;
+   margin: 36px 10px 0 30px;
    background-size: auto 100%;
    background-repeat: no-repeat;
-   background-position: left bottom;
+   background-position: right bottom;
    padding-left:30px;
    }
    .color-block {
       width: 80vw;
    }
-   /* .me, .me a.email, .temporary i, .me a.email:hover, .me a.email:before {
-      color: #dddddd;
-   }
-   .me a.email:before {
-      background-color: #dddddd;
-   } */
    .intouch {
       padding: 60px 30px;
    }
@@ -31,9 +23,9 @@
    .temporary {
       position: absolute;
       bottom: 0;
+      right: 0;
       width: 100%;
-      background: rgba(255,255,255,.4);
-      margin-left: -30px;
+      background: rgba(255,255,255,.85);
       display: flex;
       justify-content: space-around;
    }
@@ -41,7 +33,7 @@
       padding: 0 10px;
    }
    .me {
-      max-width: none;
+      max-width: 100%;
    }
 }
 
@@ -52,5 +44,10 @@
     margin-left:-50px;
     max-width:465px;
    }
+}
 
+@media only screen and (max-width: 480px) {
+   .background {
+    background-position: left bottom;
+   }
 }

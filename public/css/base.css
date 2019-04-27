@@ -13,11 +13,6 @@ h4 {
   font-weight: 400;
   color: #3C3D3E;
 }
-/* p {
-  font-weight: 400;
-  color: #3C3D3E;
-  font-size: 18px;
-} */
 a {
   color: #3C3D3E;
 }
@@ -75,10 +70,8 @@ nav > a:hover:before, nav li > a:hover:before, .work a:hover:before, .me a:hover
 }
 .background {
   background-image: url('../assets/rb_.png');
-  height: 96vh;
-  min-height: 700px;
-  margin-right: 60px;
-  margin-top: 30px;
+  height: 95vh;
+  margin: 30px 10px 0 0;
   background-size: auto 100%;
   background-repeat: no-repeat;
   background-position: right bottom;
