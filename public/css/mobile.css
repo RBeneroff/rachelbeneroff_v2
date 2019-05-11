@@ -9,16 +9,14 @@
    .color-block {
       width: 80vw;
    }
-   .intouch {
+   .in-touch {
       padding: 60px 30px;
+      display: none;
+      visibility: hidden;
    }
    .mobile-email {
     display: inline-block;
     visibility: visible;
-   }
-   .in-touch {
-      display: none;
-      visibility: hidden;
    }
    .temporary {
       position: absolute;
@@ -46,8 +44,9 @@
    }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 430px) {
    .background {
-    background-position: left bottom;
+      height: 93vh;
+      background-position: left bottom;
    }
 }
