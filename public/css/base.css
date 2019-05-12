@@ -59,13 +59,13 @@ nav > a:hover:before, nav li > a:hover:before, .work a:hover:before, .me a:hover
 }
 
 /* HOMEPAGE */
-.temporary i {
+.me i {
   font-size: 30px;
   padding-right: 15px;
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
 }
-.temporary i:hover {
+.me i:hover {
   color: #2A7B88;
 }
 .background {

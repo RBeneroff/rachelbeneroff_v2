@@ -18,19 +18,6 @@
       url: '/',
       templateUrl: 'home.html',
     });
-    // .state('home.work', {
-    //   url: 'work',
-    //   templateUrl: 'work.html',
-    // })
-    // .state('home.about', {
-    //   url:'about',
-    //   templateUrl: 'contact.html',
-    // })
-    // .state('home.contact', {
-    //   url:'contact',
-    //   templateUrl: 'contact.html',
-    // });
-
     $urlRouterProvider.otherwise('/');
 
     $locationProvider.html5Mode({

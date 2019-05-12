@@ -1,6 +1,5 @@
 @media only screen and (max-width: 650px) {
  .background {
-   /* margin: 36px 10px 0 30px; */
    margin-left: 30px;
    margin-right: 10px;
    margin-top: 30px;
@@ -21,7 +20,7 @@
     display: inline-block;
     visibility: visible;
    }
-   .temporary {
+   .me {
       position: fixed;
       bottom: 0;
       right: 0;
@@ -29,17 +28,15 @@
       background: rgba(255,255,255,.85);
       display: flex;
       justify-content: space-around;
-   }
-   .temporary i {
-      padding: 0 10px;
-   }
-   .me {
       max-width: 100%;
+   }
+   .me i {
+      padding: 0 10px;
    }
 }
 
 @media only screen and (min-width: 651px) and (max-width: 1054px) {
-   .temporary {
+   .me {
     background: rgba(255,255,255,.4);
     padding-left: 50px;
     margin-left:-50px;
