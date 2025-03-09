@@ -2,22 +2,29 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,400,700');
 body {
   font-family: 'Montserrat', sans-serif;
-  color: #3C3D3E;
+  color: #fff;
 }
 h1 {
-  font-size: 38px;
-  font-weight: 100;
-  color: #3C3D3E;
+  margin-top: 260px;
+  font-size: 60px;
+  font-weight: 400;
+  color: #fff;
+  text-transform: uppercase;
 }
 h4 {
   font-weight: 400;
-  color: #3C3D3E;
+  color: #fff;
+  margin-top: 16px;
+  font-size: 30px;
 }
 a {
-  color: #3C3D3E;
+  color: #fff;
 }
 a:hover, .button:hover {
   cursor: pointer;
+}
+a:hover {
+  color: #fff;
 }
 
 /* OVERRIDES */
@@ -28,11 +35,11 @@ button:focus {
 /* NAVBAR */
 nav a, nav li a, .work a, .me a.email {
   position: relative;
-  color: #3C3D3E;
+  color: #fff;
   text-decoration: none;
 }
 nav > a:hover, nav li > a:hover, .work a:hover, .me a.email:hover {
-  color: #3C3D3E;
+  color: #fff;
 }
 nav > a:before, nav li > a:before, .work a:before, .me a.email:before {
   content: "";
@@ -41,7 +48,7 @@ nav > a:before, nav li > a:before, .work a:before, .me a.email:before {
   height: 1px;
   bottom: -5px;
   left: 0;
-  background-color: #3C3D3E;
+  background-color: #fff;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
@@ -59,23 +66,45 @@ nav > a:hover:before, nav li > a:hover:before, .work a:hover:before, .me a:hover
 }
 
 /* HOMEPAGE */
-.me i {
-  font-size: 30px;
-  padding-right: 15px;
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
+.square {
+  padding: 30px;
+  height: 90vh;
 }
-.me i:hover {
-  color: #2A7B88;
+.info {
+  position: relative
+}
+.me, .location {
+  text-align: right;
+  padding-right:10px;
+}
+.location {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.welcome {
+  background-image: url('../assets/background.svg');
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 40px 0 40px 40px;
+  position: absolute;
+  z-index: -99;
 }
 .background {
-  background-image: url('../assets/rb_.png');
-  height: 95vh;
-  margin: 30px 10px 0 0;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  width: 60vw;
+  background-image: url('../assets/RB.PNG');
   background-size: auto 100%;
   background-repeat: no-repeat;
-  background-position: right bottom;
-  padding: 60px 0 60px 60px;
+  height: 450px;
+  padding: 40px 0 40px 40px;
+  margin: 30px 10px 0 0;
+  background-position: left top;
+  border-radius: 10px;
 }
 .line {
   border-top: 1px solid #3C3D3E;
@@ -88,22 +117,6 @@ nav > a:hover:before, nav li > a:hover:before, .work a:hover:before, .me a:hover
   border: 2px solid #3C3D3E;
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
-}
-.me {
-  margin-top:20px;
-  max-width: 500px;
-  position: relative;
-  padding: 30px 30px 30px 0;
-}
-.color-block {
-  background: #82c8c5;
-  height: 89vh;
-  width: 66vw;
-  opacity:.3;
-  z-index: -1;
-  position: absolute;
-  top: 12px;
-  left: 12px;
 }
 .in-touch {
   margin-top: 16px;

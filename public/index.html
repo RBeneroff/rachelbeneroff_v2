@@ -22,27 +22,6 @@
     <link rel="stylesheet" href="css/mobile.css">
   </head>
   <body ng-app='rbeneroff'>
-    <header class="header" style="display:none;">
-      <nav class="navbar navbar-expand-sm navbar-light bg-light nav-trans">
-        <a class="navbar-brand active" ui-sref='home' ng-hide="$state.current.name === 'home'">Rachel</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="fa fa-bars fa-1x"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbar">
-          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-            <li class="nav-item">
-              <a class="nav-link work" href="#work">Work</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link resume" target="_blank" href="../assets/RachelBeneroff_Resume.pdf">Resumé</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link contact" href="#contact">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
     <div ng-controller='SiteController as site'>
       <main ui-view></main>
     </div>

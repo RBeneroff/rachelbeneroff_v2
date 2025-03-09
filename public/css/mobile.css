@@ -1,58 +1,28 @@
 @media only screen and (max-width: 650px) {
- .background {
-   margin-left: 30px;
-   margin-right: 10px;
-   margin-top: 30px;
-   background-size: auto 100%;
-   background-repeat: no-repeat;
-   background-position: right bottom;
-   padding-left:30px;
-   }
-   .color-block {
-      width: 80vw;
-   }
-   .in-touch {
-      padding: 60px 30px;
-      display: none;
-      visibility: hidden;
-   }
-   .mobile-email {
-    display: inline-block;
-    visibility: visible;
-   }
    .me {
       position: fixed;
       bottom: 0;
       right: 0;
       width: 100%;
-      background: rgba(255,255,255,.85);
       display: flex;
-      justify-content: space-around;
-      max-width: 100%;
+      flex-flow: column;
+      padding: 0 30px 30px;
    }
-   .me i {
-      padding: 0 10px;
+   .location {
+      display: none;
+      visibility: hidden;
    }
-}
-
-@media only screen and (min-width: 651px) and (max-width: 1054px) {
-   .me {
-    background: rgba(255,255,255,.4);
-    padding-left: 50px;
-    margin-left:-50px;
-    max-width:465px;
-   }
-}
-
-@media only screen and (max-width: 430px) {
    .background {
-      background-position: left bottom;
+      height: 415px;
    }
-   .mobile-footer {
-      background: rgba(255,255,255,.85);
-      display: flex;
-      width: 100%;
-      padding: 30px 30px 30px 0;
-      justify-content: space-around;
+}
+
+@media only screen and (max-width: 420px) {
+   h1 {
+      font-size: 45px;
+      /* margin-top: 300px; */
+   }
+   h4 {
+      font-size: 25px;
    }
 }
