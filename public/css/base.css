@@ -1,5 +1,29 @@
 /* BASE */
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,400,700');
+body, html {
+  height: 100%;
+  margin: 0;
+}
+body {
+  background-image: url('../assets/background.svg');
+  /* width: 100vw;
+  height: 100vh; */
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: center;
+  /* padding: 40px; */
+}
+/* main {
+  background-image: url('../assets/background.svg');
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: center; */
+  /* width: 100vw;
+  height: 100vh; */
+  /* padding: 40px 0 40px 40px; */
+  /* position: absolute; */
+  /* z-index: -99; */
+/* } */
 body {
   font-family: 'Montserrat', sans-serif;
   color: #fff;
@@ -16,6 +40,7 @@ h4 {
   color: #fff;
   margin-top: 16px;
   font-size: 30px;
+  padding-bottom: 30px;
 }
 a {
   color: #fff;
@@ -83,14 +108,14 @@ nav > a:hover:before, nav li > a:hover:before, .work a:hover:before, .me a:hover
   right: 0;
 }
 .welcome {
-  background-image: url('../assets/background.svg');
+  /* background-image: url('../assets/background.svg');
   height: 100vh;
   width: 100vw;
   background-size: cover;
-  background-repeat: no-repeat;
-  padding: 40px 0 40px 40px;
-  position: absolute;
-  z-index: -99;
+  background-repeat: no-repeat; */
+  padding: 40px 0 0 40px;
+  /* position: absolute;
+  z-index: -99; */
 }
 .background {
   z-index: -1;
@@ -100,6 +125,7 @@ nav > a:hover:before, nav li > a:hover:before, .work a:hover:before, .me a:hover
   background-image: url('../assets/RB.PNG');
   background-size: auto 100%;
   background-repeat: no-repeat;
+  /* height: 70vh; */
   height: 450px;
   padding: 40px 0 40px 40px;
   margin: 30px 10px 0 0;
