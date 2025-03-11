@@ -6,25 +6,22 @@ body, html {
 }
 body {
   background-color: #dac1cd;
-  background-image: url('../assets/background.svg');
+  height: 100%;
+  width: 100%;
+  background:url('../assets/background.svg') no-repeat 50% 50% fixed;
+  background-size: cover;
+  /* background: url('../assets/background.svg') no-repeat center #dac1cd; */
+  /* background-image: url('../assets/background.svg'); */
   /* width: 100vw;
   height: 100vh; */
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  /* background-size: 100% 100%; */
+  /* -moz-background-size:100% 100%;
+  -webkit-background-size:100% 100%;
+  background-size:100% 100%; */
+  /* background-repeat: no-repeat;
+  background-position: center; */
   /* padding: 40px; */
 }
-/* main {
-  background-image: url('../assets/background.svg');
-  background-size: cover;
-  background-repeat: repeat;
-  background-position: center; */
-  /* width: 100vw;
-  height: 100vh; */
-  /* padding: 40px 0 40px 40px; */
-  /* position: absolute; */
-  /* z-index: -99; */
-/* } */
 body {
   font-family: 'Montserrat', sans-serif;
   color: #fff;
