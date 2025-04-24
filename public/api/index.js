@@ -1,8 +1,17 @@
-const express = require("express");
-const app = express();
+var express        = require('express'),
+    app            = express();
+var path           = require('path');
 
-app.get("/", (req, res) => res.send("Express on Vercel"));
+app.use(express.static(path.join(__dirname, 'public')));
 
-app.listen(3000, () => console.log("Server ready on port 3000."));
+app.get('/', function(req, res) {
+  res.render('index');
+});
 
-module.exports = app;
+app.use(function(req, res) {
+    res.sendFile(__dirname + '/public/index.html');
+});
+
+app.listen(process.env.PORT || 5001, function() {
+console.log('I HERE ---> 5001');
+});
