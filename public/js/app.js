@@ -19,7 +19,7 @@
       templateUrl: 'home.html',
     })
     .state('hume', {
-      url: '/proposals/hume',
+      url: '/hume',
       templateUrl: 'hume.html',
     })
     $urlRouterProvider.otherwise('/');
