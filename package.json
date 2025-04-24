@@ -4,8 +4,7 @@
   "description": "V2 of personal website",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npm start"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -20,6 +19,5 @@
   "dependencies": {
     "express": "^4.21.2",
     "path": "^0.12.7"
-  },
-  "buildCommand": ""
+  }
 }
