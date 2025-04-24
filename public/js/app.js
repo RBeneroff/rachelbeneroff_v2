@@ -17,7 +17,11 @@
     .state('home', {
       url: '/',
       templateUrl: 'home.html',
-    });
+    })
+    .state('hume', {
+      url: '/proposals/hume',
+      templateUrl: 'hume.html',
+    })
     $urlRouterProvider.otherwise('/');
 
     $locationProvider.html5Mode({
