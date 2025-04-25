@@ -24,6 +24,8 @@
     })
     $urlRouterProvider.otherwise('/');
 
+    console.log('HITTING', $urlRouterProvider);
+
     $locationProvider.html5Mode({
     enabled: true,
     requireBase: false

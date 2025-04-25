@@ -1,11 +1,12 @@
+
 {
   "name": "rachelbeneroff_v2",
   "version": "1.0.0",
   "description": "V2 of personal website",
-  "main": "server.js",
+  "main": "api/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npm start"
+    "start": "node api/index.js"
   },
   "repository": {
     "type": "git",
