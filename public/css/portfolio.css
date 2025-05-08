@@ -25,6 +25,13 @@ h4 {
     margin: 30px 30px 0 0;
     right: 0;
     top: 0;
+    display: flex;
+    align-items:flex-start;
+}
+
+.grid {
+    display: flex;
+    flex-flow: column;
 }
 
 .page {
@@ -33,6 +40,10 @@ h4 {
     border-radius: 12px;
     margin: 15px 10px;
     background-color: #000;
+}
+
+.page.white {
+    background-color: #fff;
 }
 
 #hfd {
