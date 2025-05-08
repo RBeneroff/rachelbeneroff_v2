@@ -22,9 +22,15 @@
       url: '/proposals/hume',
       templateUrl: 'hume.html',
     })
+    .state('portfolio', {
+      url: '/portfolio',
+      templateUrl: 'portfolio.html',
+    })
+    .state('andrewscoffee', {
+      url: '/portfolio/andrewscoffee',
+      templateUrl: 'andrewscoffee.html',
+    })
     $urlRouterProvider.otherwise('/');
-
-    console.log('HITTING', $urlRouterProvider);
 
     $locationProvider.html5Mode({
     enabled: true,
