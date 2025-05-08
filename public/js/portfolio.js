@@ -1,4 +1,6 @@
 $(function () {
+    document.querySelector('meta[name="theme-color"]').setAttribute("content", "#fff");
+
     clickableCard();
 });
 
