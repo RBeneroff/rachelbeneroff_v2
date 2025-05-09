@@ -20,7 +20,7 @@ i {
 }
 
 .header {
-    padding-bottom: 30px;
+    /* padding-bottom: 30px; */
 }
 
 .header a {
@@ -172,7 +172,10 @@ i {
     margin-left: 40px;
 }
 
+.middle img:last-child {
+    margin-right: 40px;
+}
+
 .middle img.desktop {
-    height: 350px;
-    margin-top: 60px;
+    height: 450px;
 }
