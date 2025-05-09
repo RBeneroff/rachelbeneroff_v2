@@ -22,6 +22,10 @@
       url: '/proposals/hume',
       templateUrl: 'hume.html',
     })
+    .state('workwithme', {
+      url: '/workwithme',
+      templateUrl: 'workwithme.html',
+    })
     .state('portfolio', {
       url: '/portfolio',
       templateUrl: 'portfolio.html',
@@ -29,6 +33,10 @@
     .state('andrewscoffee', {
       url: '/portfolio/andrewscoffee',
       templateUrl: 'andrewscoffee.html',
+    })
+    .state('seen', {
+      url: '/portfolio/seen',
+      templateUrl: 'seen.html',
     })
     $urlRouterProvider.otherwise('/');
 

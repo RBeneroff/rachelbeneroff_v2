@@ -145,3 +145,42 @@ nav > a:hover:before, nav li > a:hover:before, .work a:hover:before, .me a:hover
 .in-touch {
   margin-top: 16px;
 }
+
+.welcome.work-with-me h4 {
+  padding-bottom: 5px;
+  text-align: left;
+}
+
+.welcome.work-with-me p {
+  text-align: left;
+}
+
+.welcome.work-with-me .me div {
+  position: relative;
+}
+
+#arrow {
+  position: absolute;
+  left: 50px;
+  top: 45px;
+}
+
+.welcome.work-with-me .me div.email-container {
+  position: absolute;
+  right: 210px;
+  bottom: 180px;
+  text-wrap: nowrap;
+  /* text-align: left; */
+}
+
+.welcome.work-with-me #back {
+  display: block;
+  text-align: left;
+  font-size: 20px;
+  text-decoration: none;
+  padding-top: 5px;
+}
+
+.welcome.work-with-me a#back:hover {
+  text-decoration: none;
+}
